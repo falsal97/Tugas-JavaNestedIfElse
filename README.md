@@ -1,21 +1,23 @@
 # Tugas-JavaNestedIfElse
-
 import java.util.Scanner;
 
-public class Tugas {
-    public static void main(String[] args) throws Exception {
-        Scanner inputUsia = new Scanner(System.in);
-        System.out.println("Berapa usia anda?");
-        int usia = inputUsia.nextInt();
+public class main {
+    private static String x;
+
+    public static void main(String[] args) {
+        System.out.println("Masukan Umur Anda ");
+        Scanner input = new Scanner(System.in);
+        int usia = input.nextInt();
         if (usia <= 12) {
-            System.out.println("Anak-anak");
-            System.out.println("Buku Cerita");
-        } else if (usia >= 13 && usia <= 17) {
-            System.out.println("Remaja");
-            System.out.println("Buku Petualangan");
+            System.out.println("Kategori : Anak-anak");
+            System.out.println("Rekomendasi : Buku Cerita Remaja");
+        } else if (usia >= 18) {
+            System.out.println("Kategori : Dewasa");
+            System.out.println("Rekomendasi : Buku non-fiksi");
         } else {
-            System.out.println("Dewasa");
-            System.out.println("Buku Non-Fiksi");
+            System.out.println("Kategori : Remaja");
+            System.out.println("Rekomendasi : Buku Petualangan");
         }
+
     }
 }
